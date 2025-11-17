@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# TP React : Navigation et Rendu Dynamique
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Ce projet a été réalisé dans le cadre d'un Travail Pratique (TP) React visant à maîtriser les concepts fondamentaux de la navigation, du rendu conditionnel et de l'affichage de listes.
 
-## Available Scripts
+## Objectifs pédagogiques
 
-In the project directory, you can run:
+Ce projet met en pratique les compétences suivantes :
 
-### `npm start`
+* **Navigation (SPA)** : Mise en place d'une navigation en *single-page application* avec **React Router DOM** (`<Routes>`, `<Route>`, `<Link>`).
+* **Rendu Conditionnel** : Affichage d'éléments d'interface de manière dynamique en utilisant l'opérateur ternaire et le state (`useState`).
+* **Itération et Listes** : Génération dynamique d'éléments HTML à partir d'un tableau de données en utilisant la méthode `.map()`.
+* **Intégration de Médias** : Importation et affichage d'images (`.png`) et de médias (`.mp3`) dans les composants.
+* **Styling** : Application de styles CSS basiques aux composants (`className` et import de `.css`).
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Fonctionnalités implémentées
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Le projet est structuré autour de plusieurs composants pour démontrer ces concepts :
 
-### `npm test`
+* **Navigation principale** : Une barre de navigation permettant de basculer entre la page `Accueil` et `À propos`.
+* **État de connexion** : Un composant `Connexion` qui utilise `useState` pour basculer un état "Connecté" / "Déconnecté" (rendu conditionnel).
+* **Liste de tâches** : Un composant `ListeTaches` qui affiche une liste de tâches à partir d'un tableau de données en utilisant `.map()`.
+* **Médias** : La page d'accueil intègre un composant `Logo` (image) et `LecteurAudio` (balise `<audio>`).
+* **Styling** : Un fichier `App.css` applique un style centralisé au titre de l'application.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies utilisées
 
-### `npm run build`
+* [React](https://reactjs.org/) (v18+)
+* [React Router DOM](https://reactrouter.com/) (v6+)
+* [Create React App](https://create-react-app.dev/) (pour l'initialisation du projet)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Démarrage
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Ce projet a été initialisé avec `create-react-app`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1.  **Clonez le dépôt** (ou téléchargez les fichiers)
+2.  **Installez les dépendances** (y compris `react-router-dom`) :
+    ```bash
+    npm install
+    ```
+3.  **Lancez le serveur de développement** :
+    ```bash
+    npm start
+    ```
 
-### `npm run eject`
+L'application sera visible à l'adresse [http://localhost:3000](http://localhost:3000).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img width="1919" height="887" alt="Screenshot 2025-11-17 171746" src="https://github.com/user-attachments/assets/8023a849-f6be-418a-955d-04311bf84222" />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
